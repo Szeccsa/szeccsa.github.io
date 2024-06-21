@@ -4,7 +4,7 @@
 
 Here are some ideas to get you started:
 
-- 🔭 I’m currently working on my poersonal website
+- 🔭 I’m currently working on my personal website
 - 🌱 I’m currently learning German
 - 👯 I’m looking to collaborate on ...
 - 🤔 I’m looking for help with purchase advice
