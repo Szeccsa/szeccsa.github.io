@@ -90,10 +90,7 @@
 				margin-bottom: .75rem;
 				vertical-align: text-bottom;
 				background-color: #d7dde2;
-				border-radius: 50%;
-				opacity: 0;
-				-webkit-animation: spinner .75s linear infinite;
-				animation: spinner .75s linear infinite;
+				background-image: url("assets/i/squareloading.gif");
 			}
 		</style>
 		<style type="text/css">
@@ -162,7 +159,7 @@
 	<body>
 		<div class="page-loading active">
 			<div class="page-loading-inner">
-				<img src="assets/i/squareloading.gif" alt="Loading" title="Please wait..." draggable="false" width="50" height="50" style="margin-bottom: 10px;">
+				<div class="page-spinner"></div>
 				<span>Loading ...</span>
 			</div>
 		</div>
