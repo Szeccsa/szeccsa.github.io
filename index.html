@@ -77,18 +77,6 @@
 				font-weight: normal;
 				color: #6f788b;
 			}
-
-			[data-bs-theme="dark"] .page-loading-inner>span {
-				color: #fff;
-				opacity: .6;
-			}
-
-			.page-spinner {
-				width: 50px;
-				height: 50px;
-				margin-bottom: 10px;
-				background-image: url("assets/i/squareloading.gif");
-			}
 		</style>
 		<style type="text/css">
 
@@ -156,7 +144,7 @@
 	<body>
 		<div class="page-loading active">
 			<div class="page-loading-inner">
-				<div class="page-spinner"></div>
+				<img src="assets/i/squareloading.gif" alt="Loading" title="Please wait..." draggable="false" width="50" height="50" style="margin-bottom: 10px;">
 				<span>Loading ...</span>
 			</div>
 		</div>
