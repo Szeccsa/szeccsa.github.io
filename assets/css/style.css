@@ -13,6 +13,10 @@ body {
 	background-color: #000000;
 }
 
+iframe {
+	border-radius: 12px;
+}
+
 body:before {
 	background-attachment: scroll;
 	content: '';
