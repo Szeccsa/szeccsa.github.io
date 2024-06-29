@@ -10,151 +10,64 @@
 		<meta name="author" content="Szeccsa">
 		<meta name="robots" content="index, nofollow, noimageindex, nosnippet, noarchive">
 		<meta name="googlebot" content="index, nofollow, noimageindex, nosnippet, noarchive">
-		<meta name="twitter:card" content="summary">
-		<meta name="twitter:title" content="Szeccsa">
-		<meta name="twitter:description" content="Szeccsa">
-		<meta name="twitter:image" content="/assets/i/logo.svg">
-		<meta name="twitter:creator" content="@Szeccsa">
+		<meta name="theme-color" content="#00000">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 		<meta property="og:title" content="Szeccsa">
 		<meta property="og:description" content="Szeccsa">
-		<meta property="og:image" content="/assets/i/logo.svg">
+		<meta property="og:image" content="/assets/i/youhuu.svg">
 		<meta property="og:url" content="https://szeccsa.github.io">
 		<meta property="og:type" content="website">
 
 		<link rel="manifest" href="/manifest.json">
 		<link rel="canonical" href="https://szeccsa.github.io">
-		<link rel="icon" type="image/x-icon" href="/assets/i/logo.svg">
-		<link rel="apple-touch-icon" href="/assets/i/logo.svg">
-		
-		<style>
-			.page-loading {
-			position: fixed;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			-webkit-transition: all .4s .2s ease-in-out;
-			transition: all .4s .2s ease-in-out;
-			background-color: #fff;
-			opacity: 0;
-			visibility: hidden;
-			z-index: 9999;
-			}
-
-			[data-bs-theme="dark"] .page-loading {
-				background-color: #121519;
-			}
-
-			.page-loading.active {
-				opacity: 1;
-				visibility: visible;
-			}
-
-			.page-loading-inner {
-				position: absolute;
-				top: 50%;
-				left: 0;
-				width: 100%;
-				text-align: center;
-				-webkit-transform: translateY(-50%);
-				transform: translateY(-50%);
-				-webkit-transition: opacity .2s ease-in-out;
-				transition: opacity .2s ease-in-out;
-				opacity: 0;
-			}
-
-			.page-loading.active>.page-loading-inner {
-				opacity: 1;
-			}
-
-			.page-loading-inner>span {
-				display: block;
-				font-family: "Inter", sans-serif;
-				font-size: 1rem;
-				font-weight: normal;
-				color: #6f788b;
-			}
-		</style>
-		<style type="text/css">
-
-			::selection{ background-color: #E13300; color: white; }
-			::moz-selection{ background-color: #E13300; color: white; }
-			::webkit-selection{ background-color: #E13300; color: white; }
-			
-			body {
-				background-color: #fff;
-				margin: 40px;
-				font: 13px/20px normal Helvetica, Arial, sans-serif;
-				color: #4F5155;
-			}
-			
-			a {
-				color: #003399;
-				background-color: transparent;
-				font-weight: normal;
-			}
-			
-			h1 {
-				color: #444;
-				background-color: transparent;
-				border-bottom: 1px solid #D0D0D0;
-				font-size: 19px;
-				font-weight: normal;
-				margin: 0 0 14px 0;
-				padding: 14px 15px 10px 15px;
-			}
-			
-			code {
-				font-family: Consolas, Monaco, Courier New, Courier, monospace;
-				font-size: 12px;
-				background-color: #f9f9f9;
-				border: 1px solid #D0D0D0;
-				color: #002166;
-				display: block;
-				margin: 14px 0 14px 0;
-				padding: 12px 10px 12px 10px;
-			}
-			
-			#container {
-				margin: 10px;
-				border: 1px solid #D0D0D0;
-				-webkit-box-shadow: 0 0 8px #D0D0D0;
-			}
-			
-			p {
-				margin: 12px 15px 12px 15px;
-			}
-		</style>
-
-		<script>
-		(function () {
-			window.onload = function () {
-			const preloader = document.querySelector('.page-loading')
-			preloader.classList.remove('active')
-			setTimeout(function () {
-				preloader.remove()
-			}, 1500)
-			}
-		})()
-		</script>
+		<link rel="icon" type="image/x-icon" href="/assets/i/youhuu.svg">
+		<link rel="apple-touch-icon" href="/assets/i/youhuu.svg">
+		<link rel="stylesheet" href="/assets/css/style.scss">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+		<link href="https://fonts.googleapis.com/css2?display=swap&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900" rel="stylesheet" type="text/css" />
 	</head>
-	<body>
-		<div class="page-loading active">
-			<div class="page-loading-inner">
-				<img src="assets/i/squareloading.gif" alt="Loading" title="Please wait..." draggable="false" width="50" height="50" style="margin-bottom: 10px;">
-				<span>Loading ...</span>
+	<body class="is-loading">
+		<div id="wrapper">
+			<div id="main">
+				<div class="inner">
+					<div id="image05" class="image">
+						<span class="frame"><img src="/assets/i/youhuu.svg" draggable="false" alt="Youhuu" title=""/></span>
+					</div>
+					<h2 id="text45">Szeccsa</h2>
+					<ul id="icons02" class="icons">
+						<li>
+							<a class="n01" href="#" aria-label="Discord">
+								<svg><use xlink:href="assets/icons.svg#discord"></use></svg>
+								<span class="label">Discord</span>
+							</a>
+						</li>
+						<li>
+							<a class="n02" href="https://steamcommunity.com/id/csuszaturosbuktaval/" aria-label="Steam">
+								<svg><use xlink:href="assets/icons.svg#steam"></use></svg>
+								<span class="label">Steam</span>
+							</a>
+						</li>
+					</ul>
+					<p id="text46"><span class="p"><em><sub>*Steam and Youtube ID is different.</sub></em></span><span class="p">Oi cunts! Welcome to my website.</span><span class="p">Here are some games I play.</span></p>
+					<div id="gallery01" class="gallery full">
+						<div class="inner">
+							<ul>
+								<li>
+									<span class="thumbnail n01"><span class="frame deferred"><img  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCA2MDAgODk5IiB3aWR0aD0iNjAwIiBoZWlnaHQ9Ijg5OSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0iIzcyNjI4ZiIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg%3D%3D" data-src="assets/images/gallery01/13836146.webp" alt="Untitled" /></span></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<ul id="icons02" class="icons">
+						<a class="twitter-timeline" data-height="1000" href="https://twitter.com/Szeccsa?ref_src=twsrc%5Etfw">Tweets by Szeccsa</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+						<br/>
+						<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@szeccsa" data-unique-id="szeccsa" data-embed-type="creator" style="max-width: 780px; min-width: 288px;" > <section> <a target="_blank" href="https://www.tiktok.com/@szeccsa?refer=creator_embed">@szeccsa</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+					</ul>
+					<p id="text03"><sub><em>Szeccsa © 2024 - Brought to you by&nbsp;<i class="fa-brands fa-github"></i></em></sub></p>
+				</div>
 			</div>
 		</div>
-		<div id="container">
-			<h1>Coming soon...</h1>
-			<p>The page you requested is not done yet, please visit back later.</p>
-		</div>
-		<br/>
-		<div id="container">
-			<a class="twitter-timeline" href="https://twitter.com/Szeccsa?ref_src=twsrc%5Etfw" data-chrome="nofooter transparent noheader transparent">Tweets by Szeccsa</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-		</div>
+		<script src="/assets/js/script.js"></script>
 	</body>
 </html>
