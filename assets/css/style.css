@@ -521,7 +521,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #icons02 .n03 {
-	background-color: #00f2ea;
+	background-color: #ff0050;
 }
 
 #icons02 .n03 svg {
@@ -529,7 +529,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #icons02 .n03:hover {
-	background-color: #00f2ea !important;
+	background-color: #ff0050 !important;
 }
 
 #icons02 .n04 {
@@ -545,7 +545,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #icons02 .n05 {
-	background-color: #FF0000;
+	background-color: #4C75A3;
 }
 
 #icons02 .n05 svg {
@@ -553,6 +553,18 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #icons02 .n05:hover {
+	background-color: #4C75A3 !important;
+}
+
+#icons02 .n06 {
+	background-color: #FF0000;
+}
+
+#icons02 .n06 svg {
+	fill: #FFFFFF;
+}
+
+#icons02 .n06:hover {
 	background-color: #FF0000 !important;
 }
 
