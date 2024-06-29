@@ -19,6 +19,65 @@
 		<meta property="og:url" content="https://szeccsa.github.io">
 		<meta property="og:type" content="website">
 
+		<style>
+			.page-loading {
+				position: fixed;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				-webkit-transition: all .4s .2s ease-in-out;
+				transition: all .4s .2s ease-in-out;
+				background-color: #fff;
+				opacity: 0;
+				visibility: hidden;
+				z-index: 9999;
+			}
+			[data-bs-theme="dark"] .page-loading {
+				background-color: #121519;
+			}
+			.page-loading.active {
+				opacity: 1;
+				visibility: visible;
+			}
+			.page-loading-inner {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 100%;
+				text-align: center;
+				-webkit-transform: translateY(-50%);
+				transform: translateY(-50%);
+				-webkit-transition: opacity .2s ease-in-out;
+				transition: opacity .2s ease-in-out;
+				opacity: 0;
+			}
+			.page-loading.active > .page-loading-inner {
+				opacity: 1;
+			}
+			.page-loading-inner > span {
+				display: block;
+				font-family: "Inter", sans-serif;
+				font-size: 1rem;
+				font-weight: normal;
+				color: #6f788b;
+			}
+			</style>
+
+			<script>
+			(function () {
+				window.onload = function () {
+				const preloader = document.querySelector('.page-loading')
+				preloader.classList.remove('active')
+				setTimeout(function () {
+					preloader.remove()
+				}, 1500)
+				}
+			})()
+			</script>
+
 		<link rel="manifest" href="/manifest.json">
 		<link rel="canonical" href="https://szeccsa.github.io">
 		<link rel="icon" type="image/x-icon" href="/assets/i/youhuu.svg">
@@ -28,6 +87,12 @@
 		<link href="https://fonts.googleapis.com/css2?display=swap&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900" rel="stylesheet" type="text/css" />
 	</head>
 	<body class="is-loading">
+		<div class="page-loading active">
+			<div class="page-loading-inner">
+				<img src="/assets/i/squareloading.gif" alt="Loading" title="Please wait..." draggable="false" width="50" height="50" style="margin-bottom: 10px;">
+				<span>Loading ...</span>
+			</div>
+		</div>
 		<div id="wrapper">
 			<div id="main">
 				<div class="inner">
@@ -38,13 +103,13 @@
 					<ul id="icons02" class="icons">
 						<li>
 							<a class="n01" href="#" aria-label="Discord">
-								<i class="fa-brands fa-discord" style="color: #ffffff; text-decoration: none;"></i>
+								<svg><use xlink:href="/assets/icons.svg#discord"></use></svg>
 								<span class="label">Discord</span>
 							</a>
 						</li>
 						<li>
 							<a class="n02" href="https://steamcommunity.com/id/csuszaturosbuktaval/" aria-label="Steam">
-								<svg><use xlink:href="assets/icons.svg#steam"></use></svg>
+								<svg><use xlink:href="/assets/icons.svg#steam"></use></svg>
 								<span class="label">Steam</span>
 							</a>
 						</li>
