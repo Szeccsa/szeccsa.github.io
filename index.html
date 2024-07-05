@@ -88,7 +88,7 @@
 		<div class="page-loading active">
 			<div class="page-loading-inner">
 				<img src="/assets/i/squareloading.gif" alt="Loading" title="Please wait..." draggable="false" width="50" height="50" style="margin-bottom: 10px;">
-				<span id="loading-message">Loading...</span>
+				<span id="loading-message"></span>
 			</div>
 		</div>
 		<div id="wrapper">
@@ -180,23 +180,18 @@
 		</div>
 		<script src="/assets/js/script.js"></script>
 		<script>
-			// Array of sentences
 			const sentences = [
-				"Please wait, your content is loading...",
-				"Hang tight! We're fetching your data.",
+				"Hang tight! We're loading the page.",
 				"Loading, please be patient...",
-				"Just a moment, we're almost ready.",
-				"Loading content, thank you for waiting."
+				"Just a moment, we're almost ready."
 			];
 
-			// Function to display a random sentence
 			function showRandomSentence() {
 				const randomIndex = Math.floor(Math.random() * sentences.length);
 				const randomSentence = sentences[randomIndex];
 				document.getElementById('loading-message').innerText = randomSentence;
 			}
 
-			// Immediately call the function to set the loading message
 			showRandomSentence();
 
 			(function () {
