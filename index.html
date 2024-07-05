@@ -66,15 +66,34 @@
 		</style>
 
 		<script>
+			// Array of sentences
+			const sentences = [
+				"Please wait, your content is loading...",
+				"Hang tight! We're fetching your data.",
+				"Loading, please be patient...",
+				"Just a moment, we're almost ready.",
+				"Loading content, thank you for waiting."
+			];
+
+			// Function to display a random sentence
+			function showRandomSentence() {
+				const randomIndex = Math.floor(Math.random() * sentences.length);
+				const randomSentence = sentences[randomIndex];
+				document.getElementById('loading-message').innerText = randomSentence;
+			}
+
+			// Immediately call the function to set the loading message
+			showRandomSentence();
+
 			(function () {
 				window.onload = function () {
-				const preloader = document.querySelector('.page-loading')
-				preloader.classList.remove('active')
-				setTimeout(function () {
-					preloader.remove()
-				}, 1500)
+					const preloader = document.querySelector('.page-loading');
+					preloader.classList.remove('active');
+					setTimeout(function () {
+						preloader.remove();
+					}, 1500);
 				}
-			})()
+			})();
 		</script>
 
 		<link rel="manifest" href="/manifest.json">
@@ -88,7 +107,7 @@
 		<div class="page-loading active">
 			<div class="page-loading-inner">
 				<img src="/assets/i/squareloading.gif" alt="Loading" title="Please wait..." draggable="false" width="50" height="50" style="margin-bottom: 10px;">
-				<span>Loading...</span>
+				<span id="loading-message">Loading...</span>
 			</div>
 		</div>
 		<div id="wrapper">
