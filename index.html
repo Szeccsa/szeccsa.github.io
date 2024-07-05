@@ -66,34 +66,15 @@
 		</style>
 
 		<script>
-			// Array of sentences
-			const sentences = [
-				"Please wait, your content is loading...",
-				"Hang tight! We're fetching your data.",
-				"Loading, please be patient...",
-				"Just a moment, we're almost ready.",
-				"Loading content, thank you for waiting."
-			];
-
-			// Function to display a random sentence
-			function showRandomSentence() {
-				const randomIndex = Math.floor(Math.random() * sentences.length);
-				const randomSentence = sentences[randomIndex];
-				document.getElementById('loading-message').innerText = randomSentence;
-			}
-
-			// Immediately call the function to set the loading message
-			showRandomSentence();
-
 			(function () {
 				window.onload = function () {
-					const preloader = document.querySelector('.page-loading');
-					preloader.classList.remove('active');
-					setTimeout(function () {
-						preloader.remove();
-					}, 1500);
+				const preloader = document.querySelector('.page-loading')
+				preloader.classList.remove('active')
+				setTimeout(function () {
+					preloader.remove()
+				}, 1500)
 				}
-			})();
+			})()
 		</script>
 
 		<link rel="manifest" href="/manifest.json">
@@ -198,5 +179,35 @@
 			</div>
 		</div>
 		<script src="/assets/js/script.js"></script>
+		<script>
+			// Array of sentences
+			const sentences = [
+				"Please wait, your content is loading...",
+				"Hang tight! We're fetching your data.",
+				"Loading, please be patient...",
+				"Just a moment, we're almost ready.",
+				"Loading content, thank you for waiting."
+			];
+
+			// Function to display a random sentence
+			function showRandomSentence() {
+				const randomIndex = Math.floor(Math.random() * sentences.length);
+				const randomSentence = sentences[randomIndex];
+				document.getElementById('loading-message').innerText = randomSentence;
+			}
+
+			// Immediately call the function to set the loading message
+			showRandomSentence();
+
+			(function () {
+				window.onload = function () {
+					const preloader = document.querySelector('.page-loading');
+					preloader.classList.remove('active');
+					setTimeout(function () {
+						preloader.remove();
+					}, 1500);
+				}
+			})();
+		</script>
 	</body>
 </html>
