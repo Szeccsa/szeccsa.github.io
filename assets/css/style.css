@@ -374,7 +374,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #text46 {
 	color: rgba(255,255,255,0.741);
 	font-family: 'Inter', sans-serif;
-	padding-left: calc(2rem * var(--indent-left));
+	padding-left: calc(6rem * var(--indent-left));
 	padding-right: calc(6rem * var(--indent-right));
 	font-size: 1em;
 	line-height: 2;
@@ -949,7 +949,7 @@ th {
 	}
 	
 	#text46 {
-		padding-left: calc(1.5rem * var(--indent-left));
+		padding-left: calc(4.5rem * var(--indent-left));
 		padding-right: calc(4.5rem * var(--indent-right));
 		letter-spacing: 0rem;
 		width: 100%;
