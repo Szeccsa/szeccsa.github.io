@@ -1,1 +1,0 @@
-If you see this document then you are lucky
