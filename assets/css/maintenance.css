@@ -1,0 +1,145 @@
+body {
+  font-family: "Segoe UI", "Selawik", "verdana", "arial";
+  background-image: url("/assets/i/background_gradient.jpg");
+  background-repeat: repeat-x;
+  background-color: #e8eaef;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: #575757;
+  margin: 0px none;
+  padding: 0px none;
+}
+
+.sidebar {
+  height: 100%;
+  width: 164px;
+  position: fixed !important;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-repeat: repeat-x;
+  background-color: #000;
+  overflow-x: hidden;
+  float: left;
+  overflow: hidden;
+  text-align: center;
+}
+
+.main {
+  margin-left: 164px;
+  margin-bottom: 0px;
+  padding: 0px 10px;
+}
+
+a.logo {
+  background-image: url(/assets/i/youhuu.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 25px !important;
+  margin-bottom: 25px !important;
+  margin: auto;
+  width: 120px;
+  height: 120px;
+  display: block;
+}
+
+#slink {
+  color: rgb(219, 219, 219);
+  font-size: 1em;
+}
+
+#slink:link,
+#slink:visited {
+  color: rgb(219, 219, 219);
+  text-decoration: none;
+  vertical-align: top;
+}
+
+#slink:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+#ss4x3 {
+  width: 320px;
+  height: 240px;
+}
+
+#ss16x10 {
+  width: 320px;
+  height: 200px;
+}
+
+#ss16x9 {
+  width: 320px;
+  height: 180px;
+}
+
+a {
+  color: rgb(19, 112, 171);
+  font-weight: normal;
+  text-decoration: none;
+  margin-left: 0px;
+  vertical-align: top;
+}
+
+a:link,
+a:visited {
+  color: rgb(19, 112, 171);
+  text-decoration: none;
+  vertical-align: top;
+}
+
+a:hover {
+  color: rgb(7, 74, 229);
+  text-decoration: underline;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+h1 {
+  color: #4465a2;
+  font-size: 1.1em;
+  font-weight: normal;
+  vertical-align: bottom;
+  margin-top: 7px;
+  margin-bottom: 4px;
+}
+
+h2 {
+  color: #4465a2;
+  font-size: 1em;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+
+h3 {
+  font-size: 0.9em;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+
+h4 {
+  font-size: 0.9em;
+  font-weight: normal;
+  margin-top: 12px;
+  margin-bottom: 1px;
+}
+
+h5 {
+  font-size: 1em;
+  font-weight: normal;
+  margin-bottom: 0px;
+  margin-top: 1px;
+  font-size: 0.9em;
+  color: #575757;
+}
+
+.divider {
+  border-bottom: #b6bcc6 1px solid;
+}
