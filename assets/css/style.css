@@ -1050,3 +1050,9 @@ th {
 		font-size: 1em;
 	}
 }
+
+div.container {
+	width: auto;
+	height: 300px;
+	text-align: center;
+}
