@@ -12986,7 +12986,7 @@ body .app {
     position: relative;
     min-width: 980px;
     min-height: 100%;
-    background-image: -webkit-linear-gradient(top, #cdd4d6 0%, #fff 170px);
+        background-image: -webkit-linear-gradient(top, #cdd4d6 0%, #fff 170px);
 }
 
 body .app.text-page {
@@ -23270,8 +23270,4 @@ section.main #carousel .promo .promo--pillar-box .promo--box img {
     section>.content .responsive-tab .tabs-header.expand a.active:after {
         content: '\e003'
     }
-}
-
-.icon-arrow-down:before, section>.content .share.vertical.open .share-opener:after, header .header-menu>li>a:before {
-    content: "\e602";
 }
