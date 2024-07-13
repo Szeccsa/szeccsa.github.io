@@ -12986,8 +12986,7 @@ body .app {
     position: relative;
     min-width: 980px;
     min-height: 100%;
-    background-image: -webkit-linear-gradient(top, #fff 0%, #f6f7f7 125px);
-    background-image: linear-gradient(to bottom, #fff 0%, #f6f7f7 125px)
+    background-image: -webkit-linear-gradient(top, #cdd4d6 0%, #fff 170px);
 }
 
 body .app.text-page {
