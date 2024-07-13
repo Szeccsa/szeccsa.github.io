@@ -23271,3 +23271,7 @@ section.main #carousel .promo .promo--pillar-box .promo--box img {
         content: '\e003'
     }
 }
+
+.icon-arrow-down:before, section>.content .share.vertical.open .share-opener:after, header .header-menu>li>a:before {
+    content: "\e602";
+}
