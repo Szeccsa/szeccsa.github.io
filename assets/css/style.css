@@ -20,7 +20,7 @@ div.bg {
 @media only screen and (max-width: 600px) {
     div.bg {
         width: 100%;
-        height: 40%;
+        height: 35%;
     }
 }
 
