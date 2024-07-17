@@ -26,14 +26,13 @@ div.bg {
 
 div.container {
     display: block;
-    position: relative;
+    position: fixed !important;
     width: 100%;
     flex: 1;
 }
 
 p.centered {
     display: block;
-    position: fixed !important;
     text-align: center;
     font-size: 72px;
     background: -webkit-linear-gradient(#fe8a4c, #373737, #39bb9d);
