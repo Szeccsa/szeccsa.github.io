@@ -33,6 +33,7 @@ div.container {
 
 p.centered {
     display: block;
+    position: fixed;
     text-align: center;
     font-size: 72px;
     background: -webkit-linear-gradient(#fe8a4c, #373737, #39bb9d);
