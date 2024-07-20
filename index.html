@@ -1,53 +1,64 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
    <head>
-      <meta charset="UTF-8">
-      <title>Szeccsa</title>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta http-equiv="Cache-Control" content="no-cache">
-		<meta name="robots" content="noindex, nofollow, noimageindex, nosnippet, noarchive">
-		<meta name="description" content="Szeccsa">
-		<meta name="keywords" content="Szeccsa, szeccsa">
-		<meta name="author" content="Szeccsa">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-      <meta name="theme-color" content="#000"/>
-
-      <meta property="og:title" content="Szeccsa">
-		<meta property="og:description" content="The OFFICIAL website of Szeccsa. You can find all of your links and embeds in one place.">
-      <!-- Az SVG tamogatas sketchy a nepszeru kozossegi portalokon hogy basszam meg a szajukat, ezert nincs preview kep.-->
-		<!--meta property="og:image" content="/assets/i/youhuu-point2.svg"-->
-		<meta property="og:url" content="https://szeccsa.github.io">
-		<meta property="og:type" content="website">
-
-      <link rel="stylesheet" href="/assets/css/style.css"/>
+      <title>Object reference not set to an instance of an object.</title>
+      <style>
+         body {font-family:"Verdana";font-weight:normal;font-size: .7em;color:black;} 
+         p {font-family:"Verdana";font-weight:normal;color:black;margin-top: -5px}
+         b {font-family:"Verdana";font-weight:bold;color:black;margin-top: -5px}
+         H1 { font-family:"Verdana";font-weight:normal;font-size:18pt;color:red }
+         H2 { font-family:"Verdana";font-weight:normal;font-size:14pt;color:maroon }
+         pre {font-family:"Lucida Console";font-size: .9em}
+         .marker {font-weight: bold; color: black;text-decoration: none;}
+         .version {color: gray;}
+         .error {margin-bottom: 10px;}
+         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }
+      </style>
    </head>
-   <body>
-      <div class="bg"></div>
-      <div class="container">
-         <p class="centered" id="countdown"></p>
-         <script>
-            var countDownDate = new Date("May 11, 2026 00:00:00").getTime();
-
-            var x = setInterval(function() {
-
-            var now = new Date().getTime();
-
-            var distance = countDownDate - now;
-
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-               
-            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
-            if (distance < 0) {
-               clearInterval(x);
-               document.getElementById("countdown").innerHTML = "EXPIRED";
-            }
-            }, 1000);
-         </script>
-      </div>
+   <body bgcolor="white">
+      <span>
+         <h1>Server Error in '/' Application.<hr width="100%" size="1" color="silver"></h1>
+         <h2><i>Object reference not set to an instance of an object.</i></h2>
+      </span>
+      <font face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif ">
+         <b> Description: </b>An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code.
+         <br><br>
+         <b> Exception Details: </b>System.NullReferenceException: Object reference not set to an instance of an object.<br><br>
+         <b>Source Error:</b> <br><br>
+         <table width="100%" bgcolor="#ffffcc">
+            <tbody>
+               <tr>
+                  <td>
+                     <code>
+                        The source code that generated this unhandled exception can only be shown when compiled in debug mode. To enable this, please follow one of the below steps, then request the URL:<br><br>1. Add a "Debug=true" directive at the top of the file that generated the error. Example:<br><br> &nbsp;&nbsp;&lt;%@ Page Language="C#" Debug="true" %&gt;<br><br>or:<br><br>2) Add the following section to the configuration file of your application:<br><br>&lt;configuration&gt;<br> &nbsp;&nbsp;&nbsp;&lt;system.web&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;compilation debug="true"/&gt;<br> &nbsp;&nbsp;&nbsp;&lt;/system.web&gt;<br>&lt;/configuration&gt;<br><br> Note that this second technique will cause all files within a given application to be compiled in debug mode. The first technique will cause only that particular file to be compiled in debug mode.<br><br>Important: Running applications in debug mode does incur a memory/performance overhead. You should make sure that an application has debugging disabled before deploying into production scenario.
+                     </code>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         <br>
+         <b>Stack Trace:</b> <br><br>
+         <table width="100%" bgcolor="#ffffcc">
+            <tbody>
+               <tr>
+                  <td>
+                     <code>
+                        <pre>
+                           [NullReferenceException: Object reference not set to an instance of an object.]
+                              ASP.skins_default_aspx.Page_Load(Object sender, EventArgs e) +63
+                              System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e) +24
+                              System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e) +41
+                              System.Web.UI.Control.OnLoad(EventArgs e) +131
+                              System.Web.UI.Control.LoadRecursive() +65
+                              System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +2427
+                        </pre>
+                     </code>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         <br>
+         <hr width="100%" size="1" color="silver">
+         <b>Version Information:</b>&nbsp;Microsoft .NET Framework Version:2.0.50727.4961; ASP.NET Version:2.0.50727.4955
+      </font>
    </body>
 </html>
