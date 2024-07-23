@@ -1,64 +1,208 @@
-<html>
-   <head>
-      <title>Object reference not set to an instance of an object.</title>
-      <style>
-         body {font-family:"Verdana";font-weight:normal;font-size: .7em;color:black;} 
-         p {font-family:"Verdana";font-weight:normal;color:black;margin-top: -5px}
-         b {font-family:"Verdana";font-weight:bold;color:black;margin-top: -5px}
-         H1 { font-family:"Verdana";font-weight:normal;font-size:18pt;color:red }
-         H2 { font-family:"Verdana";font-weight:normal;font-size:14pt;color:maroon }
-         pre {font-family:"Lucida Console";font-size: .9em}
-         .marker {font-weight: bold; color: black;text-decoration: none;}
-         .version {color: gray;}
-         .error {margin-bottom: 10px;}
-         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }
-      </style>
-   </head>
-   <body bgcolor="white">
-      <span>
-         <h1>Server Error in '/' Application.<hr width="100%" size="1" color="silver"></h1>
-         <h2><i>Object reference not set to an instance of an object.</i></h2>
-      </span>
-      <font face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif ">
-         <b> Description: </b>An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code.
-         <br><br>
-         <b> Exception Details: </b>System.NullReferenceException: Object reference not set to an instance of an object.<br><br>
-         <b>Source Error:</b> <br><br>
-         <table width="100%" bgcolor="#ffffcc">
-            <tbody>
-               <tr>
-                  <td>
-                     <code>
-                        The source code that generated this unhandled exception can only be shown when compiled in debug mode. To enable this, please follow one of the below steps, then request the URL:<br><br>1. Add a "Debug=true" directive at the top of the file that generated the error. Example:<br><br> &nbsp;&nbsp;&lt;%@ Page Language="C#" Debug="true" %&gt;<br><br>or:<br><br>2) Add the following section to the configuration file of your application:<br><br>&lt;configuration&gt;<br> &nbsp;&nbsp;&nbsp;&lt;system.web&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;compilation debug="true"/&gt;<br> &nbsp;&nbsp;&nbsp;&lt;/system.web&gt;<br>&lt;/configuration&gt;<br><br> Note that this second technique will cause all files within a given application to be compiled in debug mode. The first technique will cause only that particular file to be compiled in debug mode.<br><br>Important: Running applications in debug mode does incur a memory/performance overhead. You should make sure that an application has debugging disabled before deploying into production scenario.
-                     </code>
-                  </td>
-               </tr>
-            </tbody>
-         </table>
-         <br>
-         <b>Stack Trace:</b> <br><br>
-         <table width="100%" bgcolor="#ffffcc">
-            <tbody>
-               <tr>
-                  <td>
-                     <code>
-                        <pre>
-                           [NullReferenceException: Object reference not set to an instance of an object.]
-                              ASP.skins_default_aspx.Page_Load(Object sender, EventArgs e) +63
-                              System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e) +24
-                              System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e) +41
-                              System.Web.UI.Control.OnLoad(EventArgs e) +131
-                              System.Web.UI.Control.LoadRecursive() +65
-                              System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +2427
-                        </pre>
-                     </code>
-                  </td>
-               </tr>
-            </tbody>
-         </table>
-         <br>
-         <hr width="100%" size="1" color="silver">
-         <b>Version Information:</b>&nbsp;Microsoft .NET Framework Version:2.0.50727.4961; ASP.NET Version:2.0.50727.4955
-      </font>
-   </body>
+<!DOCTYPE HTML>
+<!--
+Szia uram! Webfejlesztés érdekel?
+                                                =+++++++=                                           
+                                               ++======+++                                          
+                                              ++==+++++++++                                         
+                                              =++***+****++                                         
+                                              +===+==+++++*                                         
+                                              +++++***++++=                                         
+                                              #++**###*****                                         
+                                          +*#%%#**++*####%%**+                                      
+                                    #*##**#%%%#+####%%%@@@%#*##***+                                 
+                                   ###%#####%%%*=*%%@@@@@%#%%#%%%##*+                               
+                                 %###%#%%%@%%%%%@@@@@@@@@@@@%%%%%%%###                              
+                                %%%%%%%%%%%%@@@@@@@@@@@@@@@@@@%%%%%%%###                            
+                               %%%%%@@%%%%%@@@@@@@@@@@@%@@@@%%%%%@%@%%%#                            
+                               %@%@@@@%%%%@@@@@@@@@@@@@@@@@%%@@@@@%@@%%##                           
+                              %%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%##                          
+                              %%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%#                          
+                              %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%#                         
+                              %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%#                         
+                              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%                        
+                             %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%                        
+                             %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%                        
+                             %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%#                       
+                             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%#                       
+                             %%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%#                       
+                              %%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%                        
+                              %%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%                         
+                              %%@@%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%                          
+                                @@%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%                          
+                                   @@@@@@@@@@@@@@@%%@@@@@@@@@@@@@@@%##%%                            
+                                   %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%                               
+                                   %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%                                
+                                   %%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%                                
+                                   %%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%                                
+                                   %%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%                                
+                                    %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%                                
+                                    %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%                                
+                                    %@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%                                 
+                                    %@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%                                 
+                                     @@@@@@@@@@@@@@ @@@@@@@@@@@@@%%                                 
+                                     %@@@@@@@@@@@@@ @@@@@@@@@@@@@%%                                 
+                                     %%@@@@@@@@@@@@ %@@@@@@@@@@@@%%                                 
+                                      %@@@@@@@@@@@  %@@@@@@@@@@@@%%                                 
+                                      @@@@@@@@@@@@  %%@@@@@@@@@@@%#                                 
+                                      %@@@@@@@@@@@   %@@@@@@@@@@@%                                  
+                                      %@@@@@@@@@@@   %@@@@@@@@@@@%                                  
+                                      %%@@@@@@@@@    %@@@@@@@@@@@%                                  
+                                      %%@@@@@@@@@    %@@@@@@@@@@@%                                  
+                                     %@@@@@@@@@@      %@@@@@@@@@@%                                  
+                                    %@@@@@@@@@@@      %@@@@@@@@@@@%                                 
+                                   #%@@@@@@@@@@@      %@@@@@@@@@@@%                                 
+                                ****%@@@@@@@@@@       %@@@@@@@@@@@%                                 
+                             ***++*#%@@@@@@@@@        %@@@@@@@@@@@                                  
+                              %%%%%@@@                 @@@@@@@@@@@                                  
+                                                         @@@@@@@%                                   
+                                                            @%%#*+*                                 
+-->
+<html lang="en" dir="ltr">
+	<head>
+      	<meta charset="UTF-8">
+	  	<base href="/">
+		<title>Szeccsa</title>
+    	<meta http-equiv="content-language" content="en-US"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#00000"/>
+		<meta name="robots" content="noindex, nofollow, noimageindex, nosnippet, noarchive">
+		<meta name="description" content="The OFFICIAL website of Szeccsa. You can find all of my links, embeds and socials in one place.">
+		<meta name="keywords" content="Szeccsa, szeccsa">
+		<meta name="author" content="Szeccsa">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+      	<meta name="rating" content="Mature">
+
+      	<meta property="og:title" content="Szeccsa">
+		<meta property="og:description" content="The OFFICIAL website of Szeccsa. You can find all of my links, embeds and socials in one place.">
+		<meta property="og:image" content="/assets/i/youhuu/socialshare.png">
+		<meta property="og:url" content="https://szeccsa.github.io">
+		<meta property="og:type" content="website">
+
+		<link type="image/svg+xml" href="/assets/i/youhuu/youhuu.svg" rel="icon"/>
+      	<link type="image/svg+xml" href="/assets/i/youhuu/youhuu.svg" rel="shortcut icon"/>
+		<link type="image/svg+xml" href="/assets/i/youhuu/youhuu.svg" rel="apple-touch-icon"/>
+		<link rel="stylesheet" href="/assets/css/app.css"/>
+		<link rel="manifest" href="/assets/manifest/manifest.json"/>
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css"/></noscript>
+	</head>
+	<body class="is-loading">
+		<div id="wrapper">
+			<div id="main">
+				<div class="inner">
+					<div id="image05" class="image">
+						<span class="frame"><a href="/"><img src="/assets/i/youhuu/youhuu.svg" alt="Youhuu" title="Youhuu the racka sheep, property of World Athletics." draggable="false"/></a></span>
+					</div>
+					<h2 id="text45">Szeccsa</h2>
+					<a class="twitter-timeline" data-height="400" data-theme="dark" href="https://twitter.com/Szeccsa?ref_src=twsrc%5Etfw" data-chrome="noheader noscrollbar">Tweets by Szeccsa</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+					<br/>
+					<iframe src="https://discord.com/widget?id=1256975184301391882&theme=dark" width="100%" height="400" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+					<br/>
+					<div class="card">
+						<div class="card-header">
+						  <div class="banner"></div>
+						</div>
+						<div class="card-body">
+						  <div class="profile-header">
+							<a href="https://discord.com/users/1227980915683364955" target="_blank">
+								<div class="profil-logo"><img src="/assets/i/youhuu/youhuu.svg">
+								</div>
+							</a>
+							<div class="badges-container">
+							  <div class="badge-item">
+								<img src="https://cdn.discordapp.com/badge-icons/011940fd013da3f7fb926e4a1cd2e618.png" alt="">
+								<div class="tooltip tooltip-up">HypeSquad Brilliance</div>
+							  </div>
+							  <div class="badge-item">
+								<img src="https://cdn.discordapp.com/badge-icons/6de6d34650760ba5551a79732e98ed60.png" alt="">
+								<div class="tooltip tooltip-up">Originally known as Szeccsa#0001</div>
+							  </div>
+							</div>
+						  </div>
+						  <div class="profile-body">
+							<div class="username">KKevin</div>
+							<div class="username"><span>szeccsa • 🇭🇺/🇬🇧</span></div>
+							<hr>
+							<div class="basic-infos">
+							  <div class="category-title">Member Since</div>
+							  <p>Apr 11, 2024</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+					<br/>
+					<div class="github-card" data-github="Szeccsa" data-width="100%" data-height="200" data-theme="default"></div>
+					<script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+					<p id="text46"><span class="p">Here are some games I play:</span></p>
+					<div id="gallery01" class="gallery full">
+						<div class="inner">
+							<ul>
+								<li><span class="frame"><img src="/assets/i/cdcovers/wd1.jpg" alt="Untitled" draggable="false"/></span></li>
+								<li><span class="frame"><img src="/assets/i/cdcovers/wd3.jpg" alt="Untitled" draggable="false"/></span></li>
+								<li><span class="frame"><img src="/assets/i/cdcovers/gta4.jpg" alt="Untitled" draggable="false"/></span></li>
+								<li><span class="frame"><img src="/assets/i/cdcovers/gta5.jpg" alt="Untitled" draggable="false"/></span></li>
+							</ul>
+						</div>
+					</div>
+					<div id="table03" class="table-wrapper">
+						<div class="table-inner">
+							<table>
+								<thead>
+									<tr>
+										<th><strong>PC specifications</strong></th>
+										<th>&nbsp;</th>
+										<th>&nbsp;</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Device</td>
+										<td>Manufacturer</td>
+										<td>Model</td>
+									</tr>
+									<tr>
+										<td>PC</td>
+										<td>Dell</td>
+										<td>Optiplex 3010 SFF</td>
+									</tr>
+									<tr>
+										<td>Graphics card</td>
+										<td>MSI</td>
+										<td>R5 230 (2GB)</td>
+									</tr>
+									<tr>
+										<td>Monitor</td>
+										<td>Samsung</td>
+										<td>Syncmaster E2220</td>
+									</tr>
+									<tr>
+										<td>Mouse</td>
+										<td>Steelseries</td>
+										<td>Rival 3</td>
+									</tr>
+									<tr>
+										<td>Keyboard</td>
+										<td>ADVENT</td>
+										<td>K112 QWERTY</td>
+									</tr>
+									<tr>
+										<td>Headphones</td>
+										<td>JBL</td>
+										<td>Quantum 200</td>
+									</tr>
+									<tr>
+										<td>Webcam</td>
+										<td>MediaTek</td>
+										<td>MT4106</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<p id="text03"><sub><em>Szeccsa © 2024.<br/>Youhuu the racka sheep and the World Athletics logo are the property of World Athletics.<br/>Watch Dogs, Watch Dogs Legion and the Ubisoft logo are the property of Ubisoft.<br/>Grand Theft Auto IV, V and the Rockstar Games logo are the property of Rockstar Games.</em></sub></p>
+				</div>
+			</div>
+		</div>
+		<script src="/assets/js/app.js"></script>
+	</body>
 </html>
