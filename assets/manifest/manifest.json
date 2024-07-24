@@ -3,7 +3,7 @@
     "short_name": "Szeccsa",
     "start_url": "/",
     "display": "standalone",
-    "background_color": "#000",
+    "background_color": "#FFF",
     "description": "Add this website to your homescreen and use it as an application.",
     "icons": [
         {
