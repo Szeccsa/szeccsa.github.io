@@ -1,6 +1,6 @@
 {
-    "name": "Szeccsa",
-    "short_name": "Szeccsa",
+    "name": "szeccsa.webapp",
+    "short_name": "szeccsa.webapp",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#FFF",
