@@ -1,7 +1,7 @@
 {
     "name": "szeccsa.webapp",
     "short_name": "szeccsa.webapp",
-    "start_url": "/",
+    "start_url": "https://szeccsa.github.io",
     "display": "standalone",
     "background_color": "#FFF",
     "description": "Add this website to your homescreen and use it as an application.",
