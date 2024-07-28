@@ -6724,6 +6724,6 @@ h1 > a.Youhuu {
 
 h1 > a {
     display: inline-block !important;
-    margin: auto;
+    margin-top: 50%;
 }
 /* /Custom elements */
