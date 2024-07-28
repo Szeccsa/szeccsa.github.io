@@ -30,6 +30,31 @@
 		<link rel="stylesheet" href="/assets/css/style.css">
 		<link rel="manifest" href="/assets/manifest/manifest.json">
 		<link rel="canonical" href="https://szeccsa.github.io/Szeccsa/"/>
+		
+		<script>
+			function includeHTML() {
+			  var z, i, elmnt, file, xhttp;
+			  z = document.getElementsByTagName("*");
+			  for (i = 0; i < z.length; i++) {
+			    elmnt = z[i];
+			    file = elmnt.getAttribute("include-html");
+			    if (file) {
+			      xhttp = new XMLHttpRequest();
+			      xhttp.onreadystatechange = function() {
+			        if (this.readyState == 4) {
+			          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+			          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+			          elmnt.removeAttribute("include-html");
+			          includeHTML();
+			        }
+			      }
+			      xhttp.open("GET", file, true);
+			      xhttp.send();
+			      return;
+			    }
+			  }
+			}
+		</script>
 	</head>
 	<body>
 		<div class="container-lg px-3 my-5 markdown-body">
