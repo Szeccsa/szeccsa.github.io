@@ -6712,7 +6712,7 @@ pre {
 /* Custom elements */
 
 h1 > a.Youhuu {
-    display: block;
+    display: inline-block;
     position: relative;
     background-image: url(/assets/i/youhuu/youhuu.svg);
     background-repeat: no-repeat;
@@ -6723,7 +6723,6 @@ h1 > a.Youhuu {
 }
 
 h1 > a {
-    display: inline-block !important;
-    padding-top: 50%;
+    display: inline-block;
 }
 /* /Custom elements */
