@@ -1,119 +1,139 @@
-<!DOCTYPE html>
-<html lang="en-US">
-	<head>
-		<base href="/">
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="content-language" content="en">
+        <meta http-equiv="X-Content-Type-Options" content="nosniff">
+        <meta http-equiv="X-Frame-Options" content="deny">
+        <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self'">
+        <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+        <title>Szeccsa</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="theme-color" content="#000">
+        <meta name="description" content="Szeccsa">
+        <meta name="keywords" content="Szeccsa, szeccsa, IT, WEB, mascots, development, security, frontend, Hungary, hungary, Magyar, magyar">
+        <meta name="robots" content="noindex, nofollow, noimageindex, nosnippet, noarchive">
+        <meta name="author" content="Kevin Kiraly">
+        <meta name="generator" content="Carrds">
 
-		<title>Szeccsa</title>
-		<meta name="author" content="Szeccsa">
-		<meta name="generator" content="Jekyll v3.9.5">
-		<meta name="robots" content="noindex, nofollow, noimageindex, nosnippet, noarchive">
+        <meta property="og:title" content="Szeccsa">
+        <meta property="og:description" content="Szeccsa">
+        <meta property="og:image" content="/assets/i/Youhuu/socialshare.png">
+        <meta property="og:url" content="https://szeccsa.github.io">
 
-		<meta property="og:title" content="Szeccsa">
-		<meta property="og:description" content="The OFFICIAL website of Szeccsa. You can find all of my links, embeds and socials in one place.">
-		<meta property="og:image" content="/assets/i/youhuu/socialshare.png">
-		<meta property="og:url" content="https://szeccsa.github.io">
-		<meta property="og:type" content="website">
+        <link href="https://fonts.googleapis.com/css2?display=swap&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="/assets/i/Youhuu/socialshare.png" type="image/png"/>
+        <link rel="shortcut-icon" href="/assets/i/Youhuu/socialshare.png" type="image/png"/>
+        <link rel="apple-touch-icon" href="/assets/i/Youhuu/socialshare.png" type="image/png"/>
+        <link rel="manifest" href="/assets/manifest/manifest.json"/>
+        <link rel="stylesheet" href="/assets/css/style.css"/>
+        <noscript><link rel="stylesheet" href="/assets/css/noscript.css"/></noscript>
 
-		<link rel="icon" href="/assets/i/youhuu/youhuu.svg" type="image/svg+xml">
-		<link rel="shortcut icon" href="/assets/i/youhuu/socialshare.png">
-		<link rel="apple-touch-icon" href="/assets/i/youhuu/youhuu.svg" type="image/svg+xml">
+        <script>
+          var countDownDate = new Date("August 27, 2026 23:59:59").getTime();
 
-		<link rel="stylesheet" href="/assets/css/style.css">
-		<link rel="manifest" href="/assets/manifest/manifest.json">
-		<link rel="canonical" href="https://szeccsa.github.io/"/>
-		
-		<script>
-			function includeHTML() {
-			  var z, i, elmnt, file, xhttp;
-			  z = document.getElementsByTagName("*");
-			  for (i = 0; i < z.length; i++) {
-			    elmnt = z[i];
-			    file = elmnt.getAttribute("include-html");
-			    if (file) {
-			      xhttp = new XMLHttpRequest();
-			      xhttp.onreadystatechange = function() {
-			        if (this.readyState == 4) {
-			          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-			          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-			          elmnt.removeAttribute("include-html");
-			          includeHTML();
-			        }
-			      }
-			      xhttp.open("GET", file, true);
-			      xhttp.send();
-			      return;
-			    }
-			  }
-			}
-		</script>
-	</head>
-	<body>
-		<div class="container-lg px-3 my-5 markdown-body">
-			<h1 include-html="/incl/en/menu.html"></h1>
+          var x = setInterval(function() {
 
-			<h2 id="-about-me">❓ About Me</h2>
+            var now = new Date().getTime();
 
-			<p><img src="/assets/i/youhuu/Youhuu2.png" alt="Youhuu" title="Youhuu the racka sheep" draggable="false" align="right" width="200"/></p>
+            var distance = countDownDate - now;
 
-			<p>You may know me as “Szeccsa” on the web. And this is my story:</p>
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-			<p>My name is Kevin Király. I’m a seventeen year old person from Hungary. I speak two languages, Hungarian and English. Since 2022 I’m working and learning as a chef, being all-day-long in the kitchen. But since I hate the people around me and the job itself sucks, after school I’m planning to be a BPA (Border Patrol Agent) for a better and brighter future. I do love mascots. That’s a positive thing about me and that’s one thing why I need the money. :D</p>
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
 
-			<p>In my free time, I enjoy:</p>
+            if (distance < 0) {
+              clearInterval(x);
+              document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+          }, 1000);
+        </script>
+	  </head>
+    <body class="is-loading">
+        <div id="wrapper">
+            <div id="main">
+                <div class="inner">
+                    <div id="image05" class="image">
+                      <a href="/"><span class="frame"><img src="/assets/i/Youhuu/Wave.svg" title="Youhuu the racka sheep" alt="Youhuu the racka sheep" /></span></a>
+                    </div>
+                    <h2 id="text45">Szeccsa</h2>
+                  
+                    <a class="twitter-timeline" data-height="600" data-theme="dark" data-chrome="noheader" href="https://twitter.com/Szeccsa?ref_src=twsrc%5Etfw">Tweets by Szeccsa</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-			<ul>
-				<li>🐟 Fishing with my mates and older brother.</li>
-				<li>💻 Playing video games and making awful websites.</li>
-				<li>🚴 Going to the gym with my mates, go cycling or walking to the neighbor cities.</li>
-				<li>🎶 Listening to literally any kind of music.</li>
-			</ul>
-
-			<p>🔧 Programming Languages:</p>
-
-			<p><img src="https://img.shields.io/badge/-HTML-E34F26?style=flat&amp;logo=html5&amp;logoColor=white" draggable="false" alt="HTML Badge" />
-			<img src="https://img.shields.io/badge/-CSS-1572B6?style=flat&amp;logo=css3&amp;logoColor=white" draggable="false" alt="CSS Badge" />
-			<img src="https://img.shields.io/badge/-PHP-8892bf?style=flat&amp;logo=php&amp;logoColor=white" draggable="false" alt="PHP Badge" />
-			<img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&amp;logo=javascript&amp;logoColor=black" draggable="false" alt="JavaScript Badge" /></p>
-
-			<h2 id="-projects">📌 Projects</h2>
-
-			<ul>
-				<li>Telenor Hungary’s website from August 2013 <a href="https://github.com/Szeccsa/telenor.hu" target="_blank">telenor.hu</a></li>
-				<li>Save time on CSS media queries with <a href="https://github.com/Szeccsa/responsiver" target="_blank">Responsiver</a></li>
-				<li>Hide your website while it’s loading images and embeds with <a href="https://github.com/Szeccsa/l0ader" target="_blank">L0ader</a></li>
-			</ul>
-
-			<h2 id="-lets-connect">✈️ Let’s Connect</h2>
-
-			<ul>
-				<li>📧 Via E-Mail at <a href="mailto:hello.szeccsa@icloud.com">hello.szeccsa@icloud.com</a>.</li>
-				<li>📧 Or get help at <a href="mailto:support.szeccsa@icloud.com">support.szeccsa@icloud.com</a>.</li>
-			</ul>
-
-			<h2 id="-socials">✨ Socials</h2>
-
-			<a class="twitter-timeline" data-height="400" data-width="100%" href="https://twitter.com/Szeccsa?ref_src=twsrc%5Etfw" data-chrome="noheader noborders noscrollbar">Tweets by Szeccsa</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-			<h2 id="-szeccsa">🚀 Szeccsa</h2>
-
-			<p>That’s who I am.
-			<br/>
-			Talk with me, show me your code or in fact fool around with mine.
-			<br/>
-			You can get in touch with me through my socials or via E-Mail.
-			<br/>
-			Try to impress me and maybe you will get some extra points. :)</p>
-
-			<h2 id="-copyright">©️ Copyright</h2>
-			
-			<p include-html="/incl/en/footer.html"></p>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"></script>
-		<script>anchors.add();</script>
-	</body>
-	<script>
-		includeHTML();
-	</script>
+                    <p id="text03" title="Will be revealed."><a id="countdown"></a><img src="/assets/i/Youhuu/Cheer.svg" alt="Youhuu" draggable="false" width="30px" height="30px"></p>
+                  
+                    <div id="table03" class="table-wrapper">
+                        <div class="table-inner">
+                            <table>
+                              <thead>
+                                <tr>
+                                  <th><strong>PC Specifications</strong></th>
+                                  <th>&nbsp;</th>
+                                  <th>&nbsp;</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Component</td>
+                                  <td>Manufacturer</td>
+                                  <td>Model</td>
+                                </tr>
+                                <tr>
+                                  <td>Processor</td>
+                                  <td>AMD</td>
+                                  <td>FX-6300 Six-Core CPU</td>
+                                </tr>
+                                <tr>
+                                  <td>Graphics</td>
+                                  <td>Gigabyte</td>
+                                  <td>GTX 1060 TI 3GB</td>
+                                </tr>
+                                <tr>
+                                  <td>RAM</td>
+                                  <td>"Mixed"</td>
+                                  <td>16GB DDR3 1600Mhz</td>
+                                </tr>
+                                <tr>
+                                  <td>Monitor</td>
+                                  <td>Acer</td>
+                                  <td>K242HL</td>
+                                </tr>
+                                <tr>
+                                  <td>Keyboard</td>
+                                  <td>ADVENT</td>
+                                  <td>K112</td>
+                                </tr>
+                                <tr>
+                                  <td>Mouse</td>
+                                  <td>Steelseries</td>
+                                  <td>Rival 3</td>
+                                </tr>
+                                <tr>
+                                  <td>Webcam</td>
+                                  <td>MediaTek</td>
+                                  <td>MT4106</td>
+                                </tr>
+                                <tr>
+                                  <td>Headphones</td>
+                                  <td>JBL</td>
+                                  <td>Quantum 300</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <p id="text03"><sub><em>Szeccsa &copy; 2024.</em></sub></p>
+                    <p id="text03"><sub><em>Youhuu the racka sheep and the World Athletics logo are the property of World Athletics.<br/>No personnel has approved to use it. (Not yet.)</em></sub></p>
+                </div>
+            </div>
+        </div>
+        <script src="/assets/js/script.js"></script>
+    </body>
 </html>
