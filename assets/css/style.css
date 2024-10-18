@@ -1,0 +1,361 @@
+/* Szeccsa CSS - Made by a 17 year old entirely. (This comment was written on the 2nd of October 2024.) */
+html, body {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0px;
+}
+
+div.container {
+    display: block;
+    position: relative;
+    background: #000;
+    margin: auto;
+    width: 1000px;
+    min-height: 800px;
+    height: auto;
+}
+
+div.container header {
+    position: relative;
+    background: #FFF;
+    width: 99.8%;
+    height: 80px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    z-index: 696969;
+}
+
+div.container header .smallmenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 20px;
+}
+
+div.container header a.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 24px;
+    color: #000;
+    /* temp css */
+    background-image: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* temp css */
+    padding-left: 10px;
+    /*padding-left: 60px;*/
+    height: 50px;
+    width: 100px;
+}
+
+div.container header nav.links {
+    display: flex;
+    gap: 15px;
+}
+
+div.container header .nav-btn {
+    text-decoration: none;
+    font-size: 18px;
+    color: #606060;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+div.container header .nav-btn:hover {
+    background-color: #e0e0e0;
+}
+
+div.container header nav.links .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+div.container header nav.links .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #606060;
+    border-radius: 10px;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+div.container header .dropdown {
+    display: none;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background-color: #FFF;
+    z-index: 999;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+div.container header .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+div.container header .dropdown-menu .nav-btn {
+    padding: 10px 15px;
+}
+
+div.container header .dropdown-menu .socialcontainer {
+    display: flex;
+    margin: auto;
+}
+
+div.container header .hamburger.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-7px, 6px);
+}
+
+div.container header .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+div.container header .hamburger.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-6px, -6px);
+}
+
+div.container div.hero {
+    position: relative;
+    width: 100%;
+    /* temp css*/
+    height: 380px;
+    /*height: 416px;*/
+    z-index: 1;
+}
+
+div.container div.hero div.description {
+    position: relative;
+    width: auto;
+    /* temp css*/
+    min-height: 320px;
+    /*min-height: 356px;*/
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+div.container div.hero div.description h2.title {
+    position: relative;
+    color: #FFF;
+    font-size: 40px;
+}
+
+div.container div.hero div.description p.subtitle {
+    color: #FFF;
+    width: 400px;
+}
+
+div.container div.hero div.buttons {
+    display: grid;
+    grid-gap: 15px;
+}
+
+div.container div.hero div.description a {
+    color: #FFF;
+    font-size: 20px;
+    text-decoration: none;
+    transition: text-shadow 0.3s ease;
+}
+
+div.container div.hero div.description a:hover {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(0, 0, 255, 0.8);
+    transition: text-shadow 0.3s ease;
+}
+
+div.container div.hero div.description p.subtitle {
+    color: #FFF;
+    width: 400px;
+}
+
+div.container div.hero div.description p.footnote {
+    font-size: 10px;
+    color: #FFF;
+}
+
+div.container div.hero div.description img.youhuu {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    float: right;
+}
+
+h2.headline {
+    position: relative;
+}
+
+div.container div.about {
+    position: relative;
+    border-radius: 10px;
+    background-color: #FFF;
+    color: #000;
+    border: 1px solid #000;
+    width: 99.8%;
+    z-index: 696969;
+}
+
+div.container div.center {
+    width: 90%;
+    min-height: 100px;
+    height: auto;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+div.container div.about img.youhuu {
+    float: right;
+    margin-right: -10px;
+    margin-top: -65px;
+    width: 250px;
+}
+
+div.container div.projects {
+    position: relative;
+    border-radius: 10px;
+    background-color: #FFF;
+    color: #000;
+    border: 1px solid #000;
+    width: 99.8%;
+    z-index: 696969;
+}
+
+div.container div.projects div.project.item {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 70px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(260deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 95%);
+    margin-bottom: 30px;
+    z-index: 1;
+}
+
+div.container div.projects div.project.item div.new {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    margin-left: -20px;
+    background-image: url(/assets/i/badges/new.svg);
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+div.container div.projects div.project.item div.alert {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    margin-top: -25px;
+    margin-left: -20px;
+    background-image: url(/assets/i/badges/alert.svg);
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+div.container div.projects div.project.item h4.title {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 24px;
+    color: #000;
+}
+
+div.container div.projects div.project.item p.description {
+    position: relative;
+    margin-top: -7.5px;
+    margin-left: 20px;
+    color: #000;
+}
+
+div.container div.projects div.project.item a.launch {
+    position: relative;
+    float: right;
+    text-decoration: none;
+    border: 2px solid #FFF;
+    border-radius: 7px;
+    padding: 5px;
+    margin-right: 22.5px;
+    margin-top: 17px;
+    color: #FFF;
+    transition: 0.5s ease;
+}
+
+div.container div.projects div.project.item a.launch:hover {
+    background-color: #FFF;
+    color: #000;
+    transition: 0.5s ease;
+}
+
+div.container div.projects a.projects.more {
+    position: relative;
+    text-decoration: none;
+    border: 2px solid #000;
+    border-radius: 7px;
+    padding: 5px;
+    color: #000;
+    transition: 0.5s ease;
+}
+
+div.container div.projects a.projects.more:hover {
+    background-color: #000;
+    color: #FFF;
+    transition: 0.5s ease;
+}
+
+div.container div.projects p {
+    margin-bottom: 30px;
+}
+
+div.container div.pc-specs {
+    position: relative;
+    background-color: #000;
+    color: #FFF;
+    border: 1px solid #000;
+    width: 99.8%;
+    min-height: 200px;
+    z-index: 1;
+}
+
+div.container div.pc-specs table.table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+div.container div.pc-specs table.table td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+footer {
+    position: relative;
+    border: 1px solid #000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: #FFF;
+    width: 99.8%;
+    min-height: 80px;
+}
+
+p.footnote {
+    font-size: 10px;
+    color: #FFF;
+}

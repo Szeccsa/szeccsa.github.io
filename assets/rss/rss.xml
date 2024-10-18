@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>RSS - Szeccsa</title>
+		<link>https://szeccsa.github.io/</link>
+		<description>Szeccsa</description>
+		<language>en-GB</language>
+		<image>
+			<url>https://szeccsa.github.io/assets/i/Youhuu/Wave.svg</url>
+			<title>RSS - Szeccsa</title>
+			<link>https://szeccsa.github.io/</link>
+			<description>Telenor</description>
+			<width>100</width>
+			<height>30</height>
+		</image>
+		<item>
+			<title>RSS TEST</title>
+			<link>https://szeccsa.github.io</link>
+			<description>Introducing RSS to my website, honestly I don't know how to or where to use it in these days...</description>
+			<dc:creator>Szeccsa</dc:creator>
+			<dc:date>Tue, 15 Oct 2024 16:11:19 +0100</dc:date>
+			<guid>https://szeccsa.github.io/</guid> 
+		</item>
+				
+	</channel>
+</rss>

@@ -1,0 +1,98 @@
+@media only screen and (max-width: 1050px) {
+    html, body {
+        background: #000;
+    }
+
+    div.container {
+        width: 98%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    div.container header .smallmenu nav.links a {
+        display: none;
+    }
+
+    div.container header a.logo {
+        width: 50px;
+        padding-left: 0px;
+        /* temp css */
+        background-image: none;
+    }
+
+    div.container header a.logo span {
+        /* temp css */
+        /*display: none;*/
+    }
+
+    div.container div.hero {
+        height: 100%;
+    }
+
+    div.container div.hero div.description {
+        text-align: center;
+        /* temp css */
+        min-height: 210px !important;
+    }
+
+    div.container div.hero div.description img.youhuu {
+        width: 50%;
+        margin: auto;
+        margin-left: 50px;
+        float: none;
+    }
+
+    div.container div.hero div.description h2.title {
+        font-size: 30px;
+    }
+
+    div.container div.hero div.description p.subtitle {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    div.container div.hero div.buttons {
+        display: none;
+    }
+
+    div.container div.hero div.description a {
+        display: block;
+        text-align: center;
+    }
+
+    div.container div.about img.youhuu {
+        float: right;
+        margin-right: -10px;
+        margin-top: -65px;
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width: 861px) {
+    div.container header .dropdown {
+        display: none;
+    }
+    
+    div.container header .dropdown-menu {
+        display: none;
+    }
+    
+    div.container header .dropdown-menu .nav-btn {
+        display: none;
+    }
+    
+    div.container header .show {
+        display: none;
+    }
+
+    div.container header nav.links .hamburger {
+        display: none;
+    }
+    
+    div.container header nav.links .bar {
+        display: none;
+    }
+
+}
